@@ -36,6 +36,7 @@
 					});
 					request.execute(function(resp) {
 						if(resp.status=='confirmed') {
+							console.log("conectado");
 						}
 					});
 				});
