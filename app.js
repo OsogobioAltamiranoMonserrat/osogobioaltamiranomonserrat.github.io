@@ -159,7 +159,7 @@
 			if(responseItems.length<11){
 				for (var i in responseItems) {
 					var resource = insertar (responseItems[i],_cuerpo);
-					makeApiCall(resource);
+					//makeApiCall(resource);
 				}
 				acomodar(videos,_cuerpo);
 			}else{
@@ -179,7 +179,7 @@
 				}
 				for(var i in videosDiv[_pagina]){
 					var resource = insertar (videosDiv[_pagina][i],_cuerpo);
-					makeApiCall(resource);
+					//makeApiCall(resource);
 				}
 				acomodar(videos,_cuerpo);
 				_cuerpo.appendChild(_next);
@@ -271,7 +271,8 @@
 						'timeZone': 'America/Mexico_City'
 						}
 					};
-			return resource;
+			 makeApiCall(resource);
+			//return resource;
 		 }
 		 
 		 function acomodar(arr,div){
